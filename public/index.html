@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nature Timer</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <main class="timer-card">
+    <div class="leaf">🌿</div>
+    <h1>Nature Timer</h1>
+    <p class="subtitle">Find your peace. Focus on your goals.</p>
+
+    <label for="timerSelect">Choose your session</label>
+    <select id="timerSelect">
+      <option value="">Loading timers...</option>
+    </select>
+
+    <div class="timer" id="timer">25:00</div>
+    <div class="progress-container"><div class="progress" id="progress"></div></div>
+
+    <div class="buttons">
+      <button id="startBtn">▶ Start</button>
+      <button id="pauseBtn">Ⅱ Pause</button>
+      <button id="resetBtn">↻ Reset</button>
+    </div>
+
+    <p id="status">Take a deep breath and begin.</p>
+    <div class="quote-box">
+      <p id="quote">Loading inspiration...</p>
+      <button id="quoteBtn">New Quote</button>
+    </div>
+  </main>
+  <script src="/js/app.js"></script>
+</body>
+</html>

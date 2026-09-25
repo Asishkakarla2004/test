@@ -1,0 +1,13 @@
+{
+  "name": "nature-timer",
+  "version": "1.0.0",
+  "description": "Nature-themed timer using Node.js and Express with in-memory fake data",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

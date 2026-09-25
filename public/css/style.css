@@ -1,0 +1,70 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background:
+    linear-gradient(rgba(4, 30, 20, .55), rgba(4, 30, 20, .85)),
+    url("https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1920&q=80")
+    center/cover no-repeat fixed;
+}
+
+.timer-card {
+  width: 100%;
+  max-width: 460px;
+  padding: 35px 25px;
+  text-align: center;
+  background: rgba(255, 255, 255, .12);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, .3);
+  border-radius: 25px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, .3);
+}
+
+.leaf { font-size: 45px; margin-bottom: 10px; }
+h1 { font-size: 32px; margin-bottom: 10px; }
+.subtitle { color: #dcebdc; margin-bottom: 25px; }
+label { display: block; margin-bottom: 10px; }
+
+select {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background: #e8f1e4;
+  color: #24432c;
+  font-size: 15px;
+}
+
+.timer { font-size: 75px; font-weight: bold; letter-spacing: 3px; margin: 20px 0; }
+.progress-container { height: 8px; background: rgba(255,255,255,.2); border-radius: 20px; overflow: hidden; margin-bottom: 25px; }
+.progress { height: 100%; width: 100%; background: #bce69c; transition: width 1s linear; }
+.buttons { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; }
+
+button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: .2s;
+}
+button:hover { transform: translateY(-2px); }
+#startBtn { background: #bce69c; color: #183d30; }
+#pauseBtn { background: #fff; color: #183d30; }
+#resetBtn, #quoteBtn { background: transparent; color: #fff; border: 1px solid #fff; }
+#status { margin: 25px 0; color: #e0eadc; }
+.quote-box { padding: 15px; border-top: 1px solid rgba(255,255,255,.25); }
+#quote { font-style: italic; line-height: 1.5; margin-bottom: 15px; }
+
+@media (max-width: 480px) {
+  .timer { font-size: 55px; }
+  h1 { font-size: 26px; }
+}
